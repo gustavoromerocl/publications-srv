@@ -34,6 +34,13 @@ public class PublicationServiceImp implements PublicationService{
         if(publicationRepository.existsById(id)){
             publication.setId(id);
             return publicationRepository.save(publication);
+        } else {
+            return null;
         }
+    }
+
+    @Override
+    public void deletePublication(Long id) {
+        publicationRepository.deleteById(id);
     }
 }

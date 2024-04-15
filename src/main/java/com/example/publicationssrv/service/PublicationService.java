@@ -10,5 +10,5 @@ public interface PublicationService {
     Optional<Publication> getPublicationById(Long id);
     Publication createPublication(Publication publication);
     Publication updatePublication(Long id, Publication publication);
-    // Publication deletePublication(Long id);
+    void deletePublication(Long id);
 }
