@@ -28,4 +28,12 @@ public class PublicationServiceImp implements PublicationService{
     public Publication createPublication(Publication publication) {
         return publicationRepository.save(publication);
     }
+
+    @Override
+    public Publication updatePublication(Long id, Publication publication) {
+        if(publicationRepository.existsById(id)){
+            publication.setId(id);
+            return publicationRepository.save(publication);
+        }
+    }
 }
