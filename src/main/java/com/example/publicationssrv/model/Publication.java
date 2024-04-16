@@ -42,7 +42,7 @@ public class Publication {
     @Column(name = "contain")
     private String contain;
 
-    @OneToMany(mappedBy = "publication", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "publication")
     @JsonIgnore
     private List<Comment> comments;
 
