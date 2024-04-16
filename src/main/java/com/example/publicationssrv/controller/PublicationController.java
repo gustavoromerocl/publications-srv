@@ -38,7 +38,7 @@ public class PublicationController {
     }
 
     @PostMapping
-    public Publication createPublication(Publication publication) {
+    public Publication createPublication(@RequestBody Publication publication) {
         return publicationService.createPublication(publication);
     }
 
