@@ -1,0 +1,15 @@
+com/example/publicationssrv/repository/PublicationRepository.class
+com/example/publicationssrv/controller/PublicationController.class
+com/example/publicationssrv/model/Publication.class
+com/example/publicationssrv/exception/GlobalExceptionHandler.class
+com/example/publicationssrv/controller/CommentController.class
+com/example/publicationssrv/service/CommentService.class
+com/example/publicationssrv/service/PublicationServiceImp.class
+com/example/publicationssrv/Comment.class
+com/example/publicationssrv/PublicationssrvApplication.class
+com/example/publicationssrv/exception/GlobalExceptionHandler$ErrorResponse.class
+com/example/publicationssrv/service/CommentServiceImp.class
+com/example/publicationssrv/service/PublicationService.class
+com/example/publicationssrv/exception/ResourceNotFoundException.class
+com/example/publicationssrv/repository/CommentRepository.class
+com/example/publicationssrv/model/CommentDTO.class
