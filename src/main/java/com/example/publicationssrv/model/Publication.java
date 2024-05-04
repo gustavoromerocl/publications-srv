@@ -50,7 +50,7 @@ public class Publication extends RepresentationModel<Publication> {
     public List<CommentDTO> getCommentDTOs() {
         if (comments != null) {
             return comments.stream()
-                    .map(comment -> new CommentDTO(comment.getCommentText()))
+                    .map(comment -> new CommentDTO(comment.getCommentText(), comment.getQualification()))
                     .collect(Collectors.toList());
         }
         return null;

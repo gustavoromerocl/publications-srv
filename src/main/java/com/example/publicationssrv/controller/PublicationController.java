@@ -84,4 +84,9 @@ public class PublicationController {
     public void deletePublication(@PathVariable Long id) {
         publicationService.deletePublication(id);
     }
+
+    @GetMapping("/average/{id}")
+    public double getAveragePublicationById(@PathVariable Long id) {
+        return publicationService.getAverageByPublicationId(id);
+    }
 }

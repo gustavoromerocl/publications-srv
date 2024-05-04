@@ -9,4 +9,5 @@ import lombok.Setter;
 @AllArgsConstructor
 public class CommentDTO {
     private String commentText;
+    private Double qualification;
 }

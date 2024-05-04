@@ -30,6 +30,9 @@ public class Comment {
     @Column(name = "comment_text")
     private String commentText;
 
+    @Column(name = "qualification")
+    private Double qualification;
+
     @ManyToOne
     @JoinColumn(name = "publication_id")
     private Publication publication;
